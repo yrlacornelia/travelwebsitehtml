@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "name": "Paris",
+        "description": "The capital of France, known for the Eiffel Tower.",
+        "imageData": null
+    },
+    {
+        "id": "2",
+        "name": "Tokyo",
+        "description": "The capital of Japan, known for its modern architecture and food.",
+        "imageData": null
+    }
+]

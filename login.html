@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <article class="container">
+    <img alt="A boat and the sea" class="imagelogin" src="/images/testimg.jpg">
+    <section class="formcontainer">
+
+      <h2 style="font-size: 35px;">WELCOME</h2>
+
+      <form name="form" onsubmit="return validateForm()" class="form">
+        <div class="input-group">
+          <label for="username" class="label">Username</label>
+        
+          <input placeholder="Sven123" name="username" id="username" class="input" type="text" required>
+          <span id="usernameError" class="error"></span>
+        </div>
+
+        <div class="input-group">
+          <label for="password" class="label">Password</label>
+          <input placeholder="password" name="password" id="password" class="input" type="password" required>
+          <span id="passwordError" class="error"></span>
+        </div>
+        <button type="submit" id="submitLoginbtn">LOGIN</button>
+      </form>
+      
+      <p class="mt-0 text-sm">Already have an account? <a class="underline cursor-pointer" href="#">Login</a></p>
+    </section>
+  </article>
+
+</body>
+
+</html>

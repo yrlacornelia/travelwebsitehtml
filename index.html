@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>Travel</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+            <h3>TravelLogo</h3>
+            </div>
+            <ul class="navigationLinks">
+                <li>Home</li>
+                <li>Features</li>
+                <li>Features</li>
+                <li>Pricing</li>
+                <li>About</li>
+            </ul>
+            <button id="loginbtn" onclick="window.location.href='login.html'">LOGIN</button>
+        </nav>
+        <div class="headerinfo-container">
+        <h1 style="color: rgb(255, 255, 255);  font-size: 80px;">DISCOVER <br> ADVENTURES</h1>
+        <p style="color: rgb(232, 232, 232); font-weight: bold;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae similique ullam doloribus necessitatibus consequuntur.</p>
+        <button class="btn">CHECK OUT THIS</button>
+    </div>
+    </header>
+    <article style="margin-top: 70px;" ><h1>EXPLORE OUR MOST POPULAR DESTINATIONS </h1>
+    <ul class="travelcard-container" id="travelul">
+
+    </ul>
+    </article>
+    <script>  
+        window.onload= fetchAll; 
+    </script>
+</body>
+</html>
