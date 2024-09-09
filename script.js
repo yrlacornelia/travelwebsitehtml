@@ -1,22 +1,36 @@
-function validateForm() {
-    let username = document.forms["form"]["username"].value;
-    let password = document.forms["form"]["password"].value;
-    let isValid = true;
 
+function validateForm() {
+    var username = document.forms["form"]["username"].value;
+    var password = document.forms["form"]["password"].value;
+  
     document.getElementById("usernameError").textContent = "";
     document.getElementById("passwordError").textContent = "";
-
-    if (username.length < 3) {
-        document.getElementById("usernameError").textContent = "Name must be at least 3 characters long.";
-        isValid = false;
+  
+    var isValid = true;
+  
+    if (username.length < 4) {
+      document.getElementById("usernameError").textContent = "Username must be at least 4 characters long.";
+      isValid = false;
     }
+  
     if (password.length < 6) {
-        document.getElementById("passwordError").textContent = "Password must be at least 6 characters long.";
-        isValid = false;
+      document.getElementById("passwordError").textContent = "Password must be at least 6 characters long.";
+      isValid = false;
     }
+    if (isValid) {
+    var formContainer = document.querySelector(".formcontainer");
+      var welcomeMessage = document.createElement("h2");
+      welcomeMessage.textContent = "Welcome, " + username + "!";
+      
+      formContainer.appendChild(welcomeMessage);
+  
+      document.forms["form"].reset();
+    }
+  
+    return false; 
+  }
+  
 
-    return isValid;
-}
 
 
 
